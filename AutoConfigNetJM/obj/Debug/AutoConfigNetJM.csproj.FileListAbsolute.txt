@@ -1,0 +1,15 @@
+R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\bin\Debug\AutoConfigNetJM.exe.config
+R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\bin\Debug\AutoConfigNetJM.exe.manifest
+R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\bin\Debug\AutoConfigNetJM.application
+R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\bin\Debug\AutoConfigNetJM.exe
+R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\bin\Debug\AutoConfigNetJM.pdb
+R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.csprojAssemblyReference.cache
+R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.frmMain.resources
+R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.Properties.Resources.resources
+R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.csproj.GenerateResource.cache
+R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.csproj.CoreCompileInputs.cache
+R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.TrustInfo.xml
+R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.exe.manifest
+R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.application
+R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.exe
+R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.pdb
