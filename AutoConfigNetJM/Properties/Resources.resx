@@ -123,6 +123,12 @@
   <data name="appVersion" xml:space="preserve">
     <value>1-05.2019</value>
   </data>
+  <data name="btnAddVlan" xml:space="preserve">
+    <value>Add Vlan</value>
+  </data>
+  <data name="lblVlanGen" xml:space="preserve">
+    <value>Vlan Script Generator | Fill the options and press on Generate!</value>
+  </data>
   <data name="OptionAbout" xml:space="preserve">
     <value>About</value>
   </data>
@@ -146,5 +152,8 @@
   </data>
   <data name="tabVlan" xml:space="preserve">
     <value>Vlan Generator</value>
+  </data>
+  <data name="ttVlanNumber" xml:space="preserve">
+    <value>Vlan Number from 1 to 4094</value>
   </data>
 </root>

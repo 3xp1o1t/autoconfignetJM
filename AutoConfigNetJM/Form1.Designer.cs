@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.fileMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,9 +40,16 @@
             this.sMnuCompany = new System.Windows.Forms.ToolStripMenuItem();
             this.tbcTabs = new System.Windows.Forms.TabControl();
             this.tbcVlanGen = new System.Windows.Forms.TabPage();
+            this.spnVlanNumber = new System.Windows.Forms.NumericUpDown();
+            this.vlanList = new System.Windows.Forms.ListBox();
+            this.btnAddVlan = new System.Windows.Forms.Button();
+            this.lblVlanGen = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.toolTips = new System.Windows.Forms.ToolTip(this.components);
             this.mnuMain.SuspendLayout();
             this.tbcTabs.SuspendLayout();
+            this.tbcVlanGen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.spnVlanNumber)).BeginInit();
             this.SuspendLayout();
             // 
             // mnuMain
@@ -66,7 +74,7 @@
             // sMnuQuit
             // 
             this.sMnuQuit.Name = "sMnuQuit";
-            this.sMnuQuit.Size = new System.Drawing.Size(180, 22);
+            this.sMnuQuit.Size = new System.Drawing.Size(69, 22);
             this.sMnuQuit.Click += new System.EventHandler(this.QuitToolStripMenuItem_Click);
             // 
             // editMenuItem
@@ -79,7 +87,7 @@
             // sMnuClean
             // 
             this.sMnuClean.Name = "sMnuClean";
-            this.sMnuClean.Size = new System.Drawing.Size(180, 22);
+            this.sMnuClean.Size = new System.Drawing.Size(69, 22);
             // 
             // aboutMenuItem
             // 
@@ -92,12 +100,12 @@
             // sMnuHelp
             // 
             this.sMnuHelp.Name = "sMnuHelp";
-            this.sMnuHelp.Size = new System.Drawing.Size(180, 22);
+            this.sMnuHelp.Size = new System.Drawing.Size(69, 22);
             // 
             // sMnuCompany
             // 
             this.sMnuCompany.Name = "sMnuCompany";
-            this.sMnuCompany.Size = new System.Drawing.Size(180, 22);
+            this.sMnuCompany.Size = new System.Drawing.Size(69, 22);
             // 
             // tbcTabs
             // 
@@ -113,6 +121,10 @@
             // 
             // tbcVlanGen
             // 
+            this.tbcVlanGen.Controls.Add(this.spnVlanNumber);
+            this.tbcVlanGen.Controls.Add(this.vlanList);
+            this.tbcVlanGen.Controls.Add(this.btnAddVlan);
+            this.tbcVlanGen.Controls.Add(this.lblVlanGen);
             this.tbcVlanGen.Location = new System.Drawing.Point(4, 32);
             this.tbcVlanGen.Name = "tbcVlanGen";
             this.tbcVlanGen.Padding = new System.Windows.Forms.Padding(3);
@@ -120,14 +132,69 @@
             this.tbcVlanGen.TabIndex = 0;
             this.tbcVlanGen.UseVisualStyleBackColor = true;
             // 
+            // spnVlanNumber
+            // 
+            this.spnVlanNumber.Location = new System.Drawing.Point(118, 45);
+            this.spnVlanNumber.Maximum = new decimal(new int[] {
+            4094,
+            0,
+            0,
+            0});
+            this.spnVlanNumber.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.spnVlanNumber.Name = "spnVlanNumber";
+            this.spnVlanNumber.Size = new System.Drawing.Size(128, 26);
+            this.spnVlanNumber.TabIndex = 3;
+            this.spnVlanNumber.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // vlanList
+            // 
+            this.vlanList.FormattingEnabled = true;
+            this.vlanList.ItemHeight = 20;
+            this.vlanList.Location = new System.Drawing.Point(7, 82);
+            this.vlanList.Name = "vlanList";
+            this.vlanList.Size = new System.Drawing.Size(138, 244);
+            this.vlanList.TabIndex = 2;
+            // 
+            // btnAddVlan
+            // 
+            this.btnAddVlan.Location = new System.Drawing.Point(7, 38);
+            this.btnAddVlan.Name = "btnAddVlan";
+            this.btnAddVlan.Size = new System.Drawing.Size(105, 38);
+            this.btnAddVlan.TabIndex = 1;
+            this.btnAddVlan.UseVisualStyleBackColor = true;
+            // 
+            // lblVlanGen
+            // 
+            this.lblVlanGen.AutoSize = true;
+            this.lblVlanGen.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblVlanGen.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.lblVlanGen.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVlanGen.Location = new System.Drawing.Point(3, 3);
+            this.lblVlanGen.Name = "lblVlanGen";
+            this.lblVlanGen.Size = new System.Drawing.Size(0, 23);
+            this.lblVlanGen.TabIndex = 0;
+            this.lblVlanGen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 32);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(813, 542);
+            this.tabPage2.Size = new System.Drawing.Size(813, 546);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // toolTips
+            // 
+            this.toolTips.Popup += new System.Windows.Forms.PopupEventHandler(this.ToolTips_Popup);
             // 
             // frmMain
             // 
@@ -148,6 +215,9 @@
             this.mnuMain.ResumeLayout(false);
             this.mnuMain.PerformLayout();
             this.tbcTabs.ResumeLayout(false);
+            this.tbcVlanGen.ResumeLayout(false);
+            this.tbcVlanGen.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.spnVlanNumber)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,6 +236,11 @@
         private System.Windows.Forms.TabControl tbcTabs;
         private System.Windows.Forms.TabPage tbcVlanGen;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label lblVlanGen;
+        private System.Windows.Forms.ListBox vlanList;
+        private System.Windows.Forms.Button btnAddVlan;
+        private System.Windows.Forms.NumericUpDown spnVlanNumber;
+        private System.Windows.Forms.ToolTip toolTips;
     }
 }
 

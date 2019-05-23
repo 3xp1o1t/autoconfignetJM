@@ -29,6 +29,10 @@ namespace AutoConfigNetJM
             this.sMnuClean.Text = Properties.Resources.subOptionEditClean;
             this.sMnuHelp.Text = Properties.Resources.subOptionAboutHelp;
             this.sMnuCompany.Text = Properties.Resources.subOptionAboutCompany;
+
+            this.lblVlanGen.Text = Properties.Resources.lblVlanGen;
+            this.btnAddVlan.Text = Properties.Resources.btnAddVlan;
+            this.toolTips.SetToolTip(this.btnAddVlan, Properties.Resources.ttVlanNumber);
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
@@ -39,6 +43,10 @@ namespace AutoConfigNetJM
         private void QuitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void ToolTips_Popup(object sender, PopupEventArgs e)
+        {            
         }
     }
 }

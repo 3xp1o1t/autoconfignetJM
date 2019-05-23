@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AutoConfigNetJM.exe" size="14848">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AutoConfigNetJM.exe" size="16896">
       <assemblyIdentity name="AutoConfigNetJM" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>21wt/8Q63CwK9uHsRQGIT1KRjmkwyiKlDN7LXH8fbUI=</dsig:DigestValue>
+        <dsig:DigestValue>aZC116QEONNCRFEIQnatv/dMnu5p+d2Fg9FHbCPX2pQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

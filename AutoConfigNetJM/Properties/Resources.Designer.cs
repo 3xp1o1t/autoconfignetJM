@@ -79,6 +79,24 @@ namespace AutoConfigNetJM.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Add Vlan.
+        /// </summary>
+        internal static string btnAddVlan {
+            get {
+                return ResourceManager.GetString("btnAddVlan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Vlan Script Generator | Fill the options and press on Generate!.
+        /// </summary>
+        internal static string lblVlanGen {
+            get {
+                return ResourceManager.GetString("lblVlanGen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a About.
         /// </summary>
         internal static string OptionAbout {
@@ -147,6 +165,15 @@ namespace AutoConfigNetJM.Properties {
         internal static string tabVlan {
             get {
                 return ResourceManager.GetString("tabVlan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Vlan Number from 1 to 4094.
+        /// </summary>
+        internal static string ttVlanNumber {
+            get {
+                return ResourceManager.GetString("ttVlanNumber", resourceCulture);
             }
         }
     }
