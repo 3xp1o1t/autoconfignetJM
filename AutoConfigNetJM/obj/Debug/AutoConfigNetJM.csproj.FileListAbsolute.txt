@@ -13,3 +13,18 @@ R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\obj\Debug\AutoConfi
 R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.application
 R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.exe
 R:\Proyectos Programacion\C#\AutoConfigNetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.pdb
+C:\Users\HP\Documents\C#\autoconfignetJM\AutoConfigNetJM\bin\Debug\AutoConfigNetJM.exe.config
+C:\Users\HP\Documents\C#\autoconfignetJM\AutoConfigNetJM\bin\Debug\AutoConfigNetJM.exe.manifest
+C:\Users\HP\Documents\C#\autoconfignetJM\AutoConfigNetJM\bin\Debug\AutoConfigNetJM.application
+C:\Users\HP\Documents\C#\autoconfignetJM\AutoConfigNetJM\bin\Debug\AutoConfigNetJM.exe
+C:\Users\HP\Documents\C#\autoconfignetJM\AutoConfigNetJM\bin\Debug\AutoConfigNetJM.pdb
+C:\Users\HP\Documents\C#\autoconfignetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.csprojAssemblyReference.cache
+C:\Users\HP\Documents\C#\autoconfignetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.frmMain.resources
+C:\Users\HP\Documents\C#\autoconfignetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.Properties.Resources.resources
+C:\Users\HP\Documents\C#\autoconfignetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.csproj.GenerateResource.cache
+C:\Users\HP\Documents\C#\autoconfignetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\C#\autoconfignetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.TrustInfo.xml
+C:\Users\HP\Documents\C#\autoconfignetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.exe.manifest
+C:\Users\HP\Documents\C#\autoconfignetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.application
+C:\Users\HP\Documents\C#\autoconfignetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.exe
+C:\Users\HP\Documents\C#\autoconfignetJM\AutoConfigNetJM\obj\Debug\AutoConfigNetJM.pdb

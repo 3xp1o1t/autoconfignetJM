@@ -40,6 +40,11 @@
             this.sMnuCompany = new System.Windows.Forms.ToolStripMenuItem();
             this.tbcTabs = new System.Windows.Forms.TabControl();
             this.tbcVlanGen = new System.Windows.Forms.TabPage();
+            this.gbOptions = new System.Windows.Forms.GroupBox();
+            this.rbAddSNWVV = new System.Windows.Forms.RadioButton();
+            this.rbAddSNIV = new System.Windows.Forms.RadioButton();
+            this.rbAddCN = new System.Windows.Forms.RadioButton();
+            this.rbAddRN = new System.Windows.Forms.RadioButton();
             this.spnVlanNumber = new System.Windows.Forms.NumericUpDown();
             this.vlanList = new System.Windows.Forms.ListBox();
             this.btnAddVlan = new System.Windows.Forms.Button();
@@ -49,6 +54,7 @@
             this.mnuMain.SuspendLayout();
             this.tbcTabs.SuspendLayout();
             this.tbcVlanGen.SuspendLayout();
+            this.gbOptions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spnVlanNumber)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,6 +127,7 @@
             // 
             // tbcVlanGen
             // 
+            this.tbcVlanGen.Controls.Add(this.gbOptions);
             this.tbcVlanGen.Controls.Add(this.spnVlanNumber);
             this.tbcVlanGen.Controls.Add(this.vlanList);
             this.tbcVlanGen.Controls.Add(this.btnAddVlan);
@@ -132,11 +139,69 @@
             this.tbcVlanGen.TabIndex = 0;
             this.tbcVlanGen.UseVisualStyleBackColor = true;
             // 
+            // gbOptions
+            // 
+            this.gbOptions.Controls.Add(this.rbAddSNWVV);
+            this.gbOptions.Controls.Add(this.rbAddSNIV);
+            this.gbOptions.Controls.Add(this.rbAddCN);
+            this.gbOptions.Controls.Add(this.rbAddRN);
+            this.gbOptions.Location = new System.Drawing.Point(166, 43);
+            this.gbOptions.Name = "gbOptions";
+            this.gbOptions.Size = new System.Drawing.Size(641, 140);
+            this.gbOptions.TabIndex = 4;
+            this.gbOptions.TabStop = false;
+            // 
+            // rbAddSNWVV
+            // 
+            this.rbAddSNWVV.AutoSize = true;
+            this.rbAddSNWVV.Dock = System.Windows.Forms.DockStyle.Top;
+            this.rbAddSNWVV.Location = new System.Drawing.Point(3, 70);
+            this.rbAddSNWVV.Name = "rbAddSNWVV";
+            this.rbAddSNWVV.Padding = new System.Windows.Forms.Padding(0, 1, 2, 2);
+            this.rbAddSNWVV.Size = new System.Drawing.Size(635, 16);
+            this.rbAddSNWVV.TabIndex = 3;
+            this.rbAddSNWVV.UseVisualStyleBackColor = true;
+            // 
+            // rbAddSNIV
+            // 
+            this.rbAddSNIV.AutoSize = true;
+            this.rbAddSNIV.Dock = System.Windows.Forms.DockStyle.Top;
+            this.rbAddSNIV.Location = new System.Drawing.Point(3, 54);
+            this.rbAddSNIV.Name = "rbAddSNIV";
+            this.rbAddSNIV.Padding = new System.Windows.Forms.Padding(0, 1, 2, 2);
+            this.rbAddSNIV.Size = new System.Drawing.Size(635, 16);
+            this.rbAddSNIV.TabIndex = 2;
+            this.rbAddSNIV.UseVisualStyleBackColor = true;
+            // 
+            // rbAddCN
+            // 
+            this.rbAddCN.AutoSize = true;
+            this.rbAddCN.Dock = System.Windows.Forms.DockStyle.Top;
+            this.rbAddCN.Location = new System.Drawing.Point(3, 38);
+            this.rbAddCN.Name = "rbAddCN";
+            this.rbAddCN.Padding = new System.Windows.Forms.Padding(0, 1, 2, 2);
+            this.rbAddCN.Size = new System.Drawing.Size(635, 16);
+            this.rbAddCN.TabIndex = 1;
+            this.rbAddCN.UseVisualStyleBackColor = true;
+            // 
+            // rbAddRN
+            // 
+            this.rbAddRN.AutoSize = true;
+            this.rbAddRN.Checked = true;
+            this.rbAddRN.Dock = System.Windows.Forms.DockStyle.Top;
+            this.rbAddRN.Location = new System.Drawing.Point(3, 22);
+            this.rbAddRN.Name = "rbAddRN";
+            this.rbAddRN.Padding = new System.Windows.Forms.Padding(0, 1, 2, 2);
+            this.rbAddRN.Size = new System.Drawing.Size(635, 16);
+            this.rbAddRN.TabIndex = 0;
+            this.rbAddRN.TabStop = true;
+            this.rbAddRN.UseVisualStyleBackColor = true;
+            // 
             // spnVlanNumber
             // 
-            this.spnVlanNumber.Location = new System.Drawing.Point(118, 45);
+            this.spnVlanNumber.Location = new System.Drawing.Point(7, 50);
             this.spnVlanNumber.Maximum = new decimal(new int[] {
-            4094,
+            2,
             0,
             0,
             0});
@@ -146,7 +211,7 @@
             0,
             0});
             this.spnVlanNumber.Name = "spnVlanNumber";
-            this.spnVlanNumber.Size = new System.Drawing.Size(128, 26);
+            this.spnVlanNumber.Size = new System.Drawing.Size(55, 26);
             this.spnVlanNumber.TabIndex = 3;
             this.spnVlanNumber.Value = new decimal(new int[] {
             1,
@@ -160,16 +225,18 @@
             this.vlanList.ItemHeight = 20;
             this.vlanList.Location = new System.Drawing.Point(7, 82);
             this.vlanList.Name = "vlanList";
-            this.vlanList.Size = new System.Drawing.Size(138, 244);
+            this.vlanList.Size = new System.Drawing.Size(153, 244);
             this.vlanList.TabIndex = 2;
+            this.vlanList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.VlanList_MouseDoubleClick);
             // 
             // btnAddVlan
             // 
-            this.btnAddVlan.Location = new System.Drawing.Point(7, 38);
+            this.btnAddVlan.Location = new System.Drawing.Point(68, 43);
             this.btnAddVlan.Name = "btnAddVlan";
-            this.btnAddVlan.Size = new System.Drawing.Size(105, 38);
+            this.btnAddVlan.Size = new System.Drawing.Size(92, 38);
             this.btnAddVlan.TabIndex = 1;
             this.btnAddVlan.UseVisualStyleBackColor = true;
+            this.btnAddVlan.Click += new System.EventHandler(this.BtnAddVlan_Click);
             // 
             // lblVlanGen
             // 
@@ -192,10 +259,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // toolTips
-            // 
-            this.toolTips.Popup += new System.Windows.Forms.PopupEventHandler(this.ToolTips_Popup);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -217,6 +280,8 @@
             this.tbcTabs.ResumeLayout(false);
             this.tbcVlanGen.ResumeLayout(false);
             this.tbcVlanGen.PerformLayout();
+            this.gbOptions.ResumeLayout(false);
+            this.gbOptions.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spnVlanNumber)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -241,6 +306,11 @@
         private System.Windows.Forms.Button btnAddVlan;
         private System.Windows.Forms.NumericUpDown spnVlanNumber;
         private System.Windows.Forms.ToolTip toolTips;
+        private System.Windows.Forms.GroupBox gbOptions;
+        private System.Windows.Forms.RadioButton rbAddSNWVV;
+        private System.Windows.Forms.RadioButton rbAddSNIV;
+        private System.Windows.Forms.RadioButton rbAddCN;
+        private System.Windows.Forms.RadioButton rbAddRN;
     }
 }
 

@@ -156,4 +156,25 @@
   <data name="ttVlanNumber" xml:space="preserve">
     <value>Vlan Number from 1 to 4094</value>
   </data>
+  <data name="gbOptions" xml:space="preserve">
+    <value>Options for Vlan Generation!</value>
+  </data>
+  <data name="rbOptionAddCN" xml:space="preserve">
+    <value>Custom name's for Vlan's</value>
+  </data>
+  <data name="rbOptionAddRN" xml:space="preserve">
+    <value>Random name's for Vlan's</value>
+  </data>
+  <data name="rbOptionAddSNIV" xml:space="preserve">
+    <value>Samename with auto incremente value</value>
+  </data>
+  <data name="rbOptionAddSNWVV" xml:space="preserve">
+    <value>Vlan name with vlan number</value>
+  </data>
+  <data name="spnRange" xml:space="preserve">
+    <value>1,4094</value>
+  </data>
+  <data name="ttVlanList" xml:space="preserve">
+    <value>Double click to remove a selected item!</value>
+  </data>
 </root>

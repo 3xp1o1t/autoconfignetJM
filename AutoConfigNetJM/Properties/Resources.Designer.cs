@@ -88,6 +88,15 @@ namespace AutoConfigNetJM.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Options for Vlan Generation!.
+        /// </summary>
+        internal static string gbOptions {
+            get {
+                return ResourceManager.GetString("gbOptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Vlan Script Generator | Fill the options and press on Generate!.
         /// </summary>
         internal static string lblVlanGen {
@@ -120,6 +129,51 @@ namespace AutoConfigNetJM.Properties {
         internal static string OptionFile {
             get {
                 return ResourceManager.GetString("OptionFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Custom name&apos;s for Vlan&apos;s.
+        /// </summary>
+        internal static string rbOptionAddCN {
+            get {
+                return ResourceManager.GetString("rbOptionAddCN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Random name&apos;s for Vlan&apos;s.
+        /// </summary>
+        internal static string rbOptionAddRN {
+            get {
+                return ResourceManager.GetString("rbOptionAddRN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Samename with auto incremente value.
+        /// </summary>
+        internal static string rbOptionAddSNIV {
+            get {
+                return ResourceManager.GetString("rbOptionAddSNIV", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Vlan name with vlan number.
+        /// </summary>
+        internal static string rbOptionAddSNWVV {
+            get {
+                return ResourceManager.GetString("rbOptionAddSNWVV", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a 1,4094.
+        /// </summary>
+        internal static string spnRange {
+            get {
+                return ResourceManager.GetString("spnRange", resourceCulture);
             }
         }
         
@@ -165,6 +219,15 @@ namespace AutoConfigNetJM.Properties {
         internal static string tabVlan {
             get {
                 return ResourceManager.GetString("tabVlan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Double click to remove a selected item!.
+        /// </summary>
+        internal static string ttVlanList {
+            get {
+                return ResourceManager.GetString("ttVlanList", resourceCulture);
             }
         }
         
