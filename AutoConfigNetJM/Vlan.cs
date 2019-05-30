@@ -20,5 +20,30 @@ namespace AutoConfigNetJM
                 return true;
             }                        
         }
+
+        public string RandomVlanName(int name_length)
+        {
+            string letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghihklmnopqrstuvwxyz";
+            Random r = new Random();
+            string output = "";
+            for (int i = 0; i < name_length; i++)
+            {
+                output += letters[index: r.Next(0, letters.Length)];
+            }
+            return output;
+        }
+
+        public bool SetCustomNVlanName(string name, List<string> names)
+        {
+            if (names.Contains(name))
+            {
+                return false;    
+            }
+            else
+            {
+                names.Add(name);
+                return true;
+            }
+        }
     }
 }

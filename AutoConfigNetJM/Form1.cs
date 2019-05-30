@@ -17,6 +17,7 @@ namespace AutoConfigNetJM
         readonly int MIN_VLAN_RANGE = int.Parse(vlans_range[0]);
         readonly int MAX_VLAN_RANGE = int.Parse(vlans_range[1]);
         Vlan vlan = new Vlan();
+        List<string> vlan_names = new List<string>();
         public frmMain()
         {
             InitializeComponent();
@@ -38,9 +39,10 @@ namespace AutoConfigNetJM
             this.sMnuHelp.Text = Properties.Resources.subOptionAboutHelp;
             this.sMnuCompany.Text = Properties.Resources.subOptionAboutCompany;
             this.gbOptions.Text = Properties.Resources.gbOptions;
+            this.gbScriptOptions.Text = Properties.Resources.gbScriptOptions;
+            this.gbOutput.Text = Properties.Resources.gbOutput;
             this.rbAddRN.Text = Properties.Resources.rbOptionAddRN;
-            this.rbAddCN.Text = Properties.Resources.rbOptionAddCN;
-            this.rbAddSNIV.Text = Properties.Resources.rbOptionAddSNIV;
+            this.rbAddCN.Text = Properties.Resources.rbOptionAddCN;            
             this.rbAddSNWVV.Text = Properties.Resources.rbOptionAddSNWVV;
 
             // Labels
@@ -48,6 +50,8 @@ namespace AutoConfigNetJM
             
             // Buttons
             this.btnAddVlan.Text = Properties.Resources.btnAddVlan;
+            this.btnGenerate.Text = Properties.Resources.btnGenerate;
+            this.btnCopy.Text = Properties.Resources.btnCopy;
 
             // Spinners
             this.spnVlanNumber.Minimum = MIN_VLAN_RANGE;
@@ -56,6 +60,16 @@ namespace AutoConfigNetJM
             // Tooltips items.
             this.toolTips.SetToolTip(this.btnAddVlan, Properties.Resources.ttVlanNumber);
             this.toolTips.SetToolTip(this.vlanList, Properties.Resources.ttVlanList);
+            this.toolTips.SetToolTip(this.btnGenerate, Properties.Resources.ttBtnGenerate);
+            this.toolTips.SetToolTip(this.btnCopy, Properties.Resources.ttBtnCopy);
+            this.toolTips.SetToolTip(this.chbTelnet, Properties.Resources.ttAddTelnet);
+            this.toolTips.SetToolTip(this.chbSSH, Properties.Resources.ttAddSHH);
+            this.toolTips.SetToolTip(this.chbHTTP, Properties.Resources.ttAddHTTP);
+
+            // CheckBoxs
+            this.chbTelnet.Text = Properties.Resources.chbTelnet;
+            this.chbSSH.Text = Properties.Resources.chbSSH;
+            this.chbHTTP.Text = Properties.Resources.chbHTTP;
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
@@ -74,11 +88,17 @@ namespace AutoConfigNetJM
             if (!result)
                 MessageBox.Show("La vlan " + spnVlanNumber.Value + " ya fue agregada!",
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        
         }
 
         private void VlanList_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             vlanList.Items.Remove(vlanList.SelectedItem);
+        }
+
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

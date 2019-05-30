@@ -40,9 +40,16 @@
             this.sMnuCompany = new System.Windows.Forms.ToolStripMenuItem();
             this.tbcTabs = new System.Windows.Forms.TabControl();
             this.tbcVlanGen = new System.Windows.Forms.TabPage();
+            this.gbOutput = new System.Windows.Forms.GroupBox();
+            this.btnCopy = new System.Windows.Forms.Button();
+            this.txtOutput = new System.Windows.Forms.RichTextBox();
+            this.btnGenerate = new System.Windows.Forms.Button();
+            this.gbScriptOptions = new System.Windows.Forms.GroupBox();
+            this.chbHTTP = new System.Windows.Forms.CheckBox();
+            this.chbSSH = new System.Windows.Forms.CheckBox();
+            this.chbTelnet = new System.Windows.Forms.CheckBox();
             this.gbOptions = new System.Windows.Forms.GroupBox();
             this.rbAddSNWVV = new System.Windows.Forms.RadioButton();
-            this.rbAddSNIV = new System.Windows.Forms.RadioButton();
             this.rbAddCN = new System.Windows.Forms.RadioButton();
             this.rbAddRN = new System.Windows.Forms.RadioButton();
             this.spnVlanNumber = new System.Windows.Forms.NumericUpDown();
@@ -54,6 +61,8 @@
             this.mnuMain.SuspendLayout();
             this.tbcTabs.SuspendLayout();
             this.tbcVlanGen.SuspendLayout();
+            this.gbOutput.SuspendLayout();
+            this.gbScriptOptions.SuspendLayout();
             this.gbOptions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spnVlanNumber)).BeginInit();
             this.SuspendLayout();
@@ -122,11 +131,14 @@
             this.tbcTabs.Location = new System.Drawing.Point(0, 24);
             this.tbcTabs.Name = "tbcTabs";
             this.tbcTabs.SelectedIndex = 0;
-            this.tbcTabs.Size = new System.Drawing.Size(821, 582);
+            this.tbcTabs.Size = new System.Drawing.Size(821, 567);
             this.tbcTabs.TabIndex = 1;
             // 
             // tbcVlanGen
             // 
+            this.tbcVlanGen.Controls.Add(this.gbOutput);
+            this.tbcVlanGen.Controls.Add(this.btnGenerate);
+            this.tbcVlanGen.Controls.Add(this.gbScriptOptions);
             this.tbcVlanGen.Controls.Add(this.gbOptions);
             this.tbcVlanGen.Controls.Add(this.spnVlanNumber);
             this.tbcVlanGen.Controls.Add(this.vlanList);
@@ -135,47 +147,120 @@
             this.tbcVlanGen.Location = new System.Drawing.Point(4, 32);
             this.tbcVlanGen.Name = "tbcVlanGen";
             this.tbcVlanGen.Padding = new System.Windows.Forms.Padding(3);
-            this.tbcVlanGen.Size = new System.Drawing.Size(813, 546);
+            this.tbcVlanGen.Size = new System.Drawing.Size(813, 531);
             this.tbcVlanGen.TabIndex = 0;
             this.tbcVlanGen.UseVisualStyleBackColor = true;
+            // 
+            // gbOutput
+            // 
+            this.gbOutput.Controls.Add(this.btnCopy);
+            this.gbOutput.Controls.Add(this.txtOutput);
+            this.gbOutput.Location = new System.Drawing.Point(166, 268);
+            this.gbOutput.Name = "gbOutput";
+            this.gbOutput.Size = new System.Drawing.Size(638, 258);
+            this.gbOutput.TabIndex = 9;
+            this.gbOutput.TabStop = false;
+            // 
+            // btnCopy
+            // 
+            this.btnCopy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCopy.Location = new System.Drawing.Point(476, 216);
+            this.btnCopy.Name = "btnCopy";
+            this.btnCopy.Size = new System.Drawing.Size(156, 34);
+            this.btnCopy.TabIndex = 8;
+            this.btnCopy.UseVisualStyleBackColor = true;
+            // 
+            // txtOutput
+            // 
+            this.txtOutput.Location = new System.Drawing.Point(9, 25);
+            this.txtOutput.Name = "txtOutput";
+            this.txtOutput.Size = new System.Drawing.Size(623, 185);
+            this.txtOutput.TabIndex = 5;
+            this.txtOutput.Text = "";
+            // 
+            // btnGenerate
+            // 
+            this.btnGenerate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGenerate.Location = new System.Drawing.Point(698, 225);
+            this.btnGenerate.Name = "btnGenerate";
+            this.btnGenerate.Size = new System.Drawing.Size(106, 34);
+            this.btnGenerate.TabIndex = 7;
+            this.btnGenerate.UseVisualStyleBackColor = true;
+            // 
+            // gbScriptOptions
+            // 
+            this.gbScriptOptions.Controls.Add(this.chbHTTP);
+            this.gbScriptOptions.Controls.Add(this.chbSSH);
+            this.gbScriptOptions.Controls.Add(this.chbTelnet);
+            this.gbScriptOptions.Location = new System.Drawing.Point(166, 151);
+            this.gbScriptOptions.Name = "gbScriptOptions";
+            this.gbScriptOptions.Size = new System.Drawing.Size(641, 68);
+            this.gbScriptOptions.TabIndex = 6;
+            this.gbScriptOptions.TabStop = false;
+            // 
+            // chbHTTP
+            // 
+            this.chbHTTP.AutoSize = true;
+            this.chbHTTP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chbHTTP.Dock = System.Windows.Forms.DockStyle.Left;
+            this.chbHTTP.Location = new System.Drawing.Point(43, 22);
+            this.chbHTTP.Name = "chbHTTP";
+            this.chbHTTP.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.chbHTTP.Size = new System.Drawing.Size(25, 43);
+            this.chbHTTP.TabIndex = 2;
+            this.chbHTTP.UseVisualStyleBackColor = true;
+            // 
+            // chbSSH
+            // 
+            this.chbSSH.AutoSize = true;
+            this.chbSSH.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chbSSH.Dock = System.Windows.Forms.DockStyle.Left;
+            this.chbSSH.Location = new System.Drawing.Point(18, 22);
+            this.chbSSH.Name = "chbSSH";
+            this.chbSSH.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.chbSSH.Size = new System.Drawing.Size(25, 43);
+            this.chbSSH.TabIndex = 1;
+            this.chbSSH.UseVisualStyleBackColor = true;
+            // 
+            // chbTelnet
+            // 
+            this.chbTelnet.AutoSize = true;
+            this.chbTelnet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chbTelnet.Dock = System.Windows.Forms.DockStyle.Left;
+            this.chbTelnet.Location = new System.Drawing.Point(3, 22);
+            this.chbTelnet.Name = "chbTelnet";
+            this.chbTelnet.Size = new System.Drawing.Size(15, 43);
+            this.chbTelnet.TabIndex = 0;
+            this.chbTelnet.UseVisualStyleBackColor = true;
+            this.chbTelnet.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
             // gbOptions
             // 
             this.gbOptions.Controls.Add(this.rbAddSNWVV);
-            this.gbOptions.Controls.Add(this.rbAddSNIV);
             this.gbOptions.Controls.Add(this.rbAddCN);
             this.gbOptions.Controls.Add(this.rbAddRN);
             this.gbOptions.Location = new System.Drawing.Point(166, 43);
             this.gbOptions.Name = "gbOptions";
-            this.gbOptions.Size = new System.Drawing.Size(641, 140);
+            this.gbOptions.Size = new System.Drawing.Size(641, 102);
             this.gbOptions.TabIndex = 4;
             this.gbOptions.TabStop = false;
             // 
             // rbAddSNWVV
             // 
             this.rbAddSNWVV.AutoSize = true;
+            this.rbAddSNWVV.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbAddSNWVV.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbAddSNWVV.Location = new System.Drawing.Point(3, 70);
+            this.rbAddSNWVV.Location = new System.Drawing.Point(3, 54);
             this.rbAddSNWVV.Name = "rbAddSNWVV";
             this.rbAddSNWVV.Padding = new System.Windows.Forms.Padding(0, 1, 2, 2);
             this.rbAddSNWVV.Size = new System.Drawing.Size(635, 16);
             this.rbAddSNWVV.TabIndex = 3;
             this.rbAddSNWVV.UseVisualStyleBackColor = true;
             // 
-            // rbAddSNIV
-            // 
-            this.rbAddSNIV.AutoSize = true;
-            this.rbAddSNIV.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbAddSNIV.Location = new System.Drawing.Point(3, 54);
-            this.rbAddSNIV.Name = "rbAddSNIV";
-            this.rbAddSNIV.Padding = new System.Windows.Forms.Padding(0, 1, 2, 2);
-            this.rbAddSNIV.Size = new System.Drawing.Size(635, 16);
-            this.rbAddSNIV.TabIndex = 2;
-            this.rbAddSNIV.UseVisualStyleBackColor = true;
-            // 
             // rbAddCN
             // 
             this.rbAddCN.AutoSize = true;
+            this.rbAddCN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbAddCN.Dock = System.Windows.Forms.DockStyle.Top;
             this.rbAddCN.Location = new System.Drawing.Point(3, 38);
             this.rbAddCN.Name = "rbAddCN";
@@ -188,6 +273,7 @@
             // 
             this.rbAddRN.AutoSize = true;
             this.rbAddRN.Checked = true;
+            this.rbAddRN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbAddRN.Dock = System.Windows.Forms.DockStyle.Top;
             this.rbAddRN.Location = new System.Drawing.Point(3, 22);
             this.rbAddRN.Name = "rbAddRN";
@@ -225,12 +311,13 @@
             this.vlanList.ItemHeight = 20;
             this.vlanList.Location = new System.Drawing.Point(7, 82);
             this.vlanList.Name = "vlanList";
-            this.vlanList.Size = new System.Drawing.Size(153, 244);
+            this.vlanList.Size = new System.Drawing.Size(153, 444);
             this.vlanList.TabIndex = 2;
             this.vlanList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.VlanList_MouseDoubleClick);
             // 
             // btnAddVlan
             // 
+            this.btnAddVlan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddVlan.Location = new System.Drawing.Point(68, 43);
             this.btnAddVlan.Name = "btnAddVlan";
             this.btnAddVlan.Size = new System.Drawing.Size(92, 38);
@@ -255,7 +342,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 32);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(813, 546);
+            this.tabPage2.Size = new System.Drawing.Size(813, 531);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
@@ -263,7 +350,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(821, 606);
+            this.ClientSize = new System.Drawing.Size(821, 591);
             this.Controls.Add(this.tbcTabs);
             this.Controls.Add(this.mnuMain);
             this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -280,6 +367,9 @@
             this.tbcTabs.ResumeLayout(false);
             this.tbcVlanGen.ResumeLayout(false);
             this.tbcVlanGen.PerformLayout();
+            this.gbOutput.ResumeLayout(false);
+            this.gbScriptOptions.ResumeLayout(false);
+            this.gbScriptOptions.PerformLayout();
             this.gbOptions.ResumeLayout(false);
             this.gbOptions.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spnVlanNumber)).EndInit();
@@ -308,9 +398,16 @@
         private System.Windows.Forms.ToolTip toolTips;
         private System.Windows.Forms.GroupBox gbOptions;
         private System.Windows.Forms.RadioButton rbAddSNWVV;
-        private System.Windows.Forms.RadioButton rbAddSNIV;
         private System.Windows.Forms.RadioButton rbAddCN;
         private System.Windows.Forms.RadioButton rbAddRN;
+        private System.Windows.Forms.RichTextBox txtOutput;
+        private System.Windows.Forms.GroupBox gbScriptOptions;
+        private System.Windows.Forms.CheckBox chbTelnet;
+        private System.Windows.Forms.CheckBox chbSSH;
+        private System.Windows.Forms.CheckBox chbHTTP;
+        private System.Windows.Forms.Button btnGenerate;
+        private System.Windows.Forms.GroupBox gbOutput;
+        private System.Windows.Forms.Button btnCopy;
     }
 }
 

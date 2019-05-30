@@ -88,11 +88,74 @@ namespace AutoConfigNetJM.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Copy to ClipBoard.
+        /// </summary>
+        internal static string btnCopy {
+            get {
+                return ResourceManager.GetString("btnCopy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Generate.
+        /// </summary>
+        internal static string btnGenerate {
+            get {
+                return ResourceManager.GetString("btnGenerate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Add HTTP.
+        /// </summary>
+        internal static string chbHTTP {
+            get {
+                return ResourceManager.GetString("chbHTTP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Add SSH.
+        /// </summary>
+        internal static string chbSSH {
+            get {
+                return ResourceManager.GetString("chbSSH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Add Telnet.
+        /// </summary>
+        internal static string chbTelnet {
+            get {
+                return ResourceManager.GetString("chbTelnet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Options for Vlan Generation!.
         /// </summary>
         internal static string gbOptions {
             get {
                 return ResourceManager.GetString("gbOptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Output.
+        /// </summary>
+        internal static string gbOutput {
+            get {
+                return ResourceManager.GetString("gbOutput", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Script Options.
+        /// </summary>
+        internal static string gbScriptOptions {
+            get {
+                return ResourceManager.GetString("gbScriptOptions", resourceCulture);
             }
         }
         
@@ -147,15 +210,6 @@ namespace AutoConfigNetJM.Properties {
         internal static string rbOptionAddRN {
             get {
                 return ResourceManager.GetString("rbOptionAddRN", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Samename with auto incremente value.
-        /// </summary>
-        internal static string rbOptionAddSNIV {
-            get {
-                return ResourceManager.GetString("rbOptionAddSNIV", resourceCulture);
             }
         }
         
@@ -219,6 +273,51 @@ namespace AutoConfigNetJM.Properties {
         internal static string tabVlan {
             get {
                 return ResourceManager.GetString("tabVlan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Add HTTP configuration to admin your Switch from web browser!.
+        /// </summary>
+        internal static string ttAddHTTP {
+            get {
+                return ResourceManager.GetString("ttAddHTTP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Add SSH configuration!.
+        /// </summary>
+        internal static string ttAddSHH {
+            get {
+                return ResourceManager.GetString("ttAddSHH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Add Telnet configuration!.
+        /// </summary>
+        internal static string ttAddTelnet {
+            get {
+                return ResourceManager.GetString("ttAddTelnet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Copy to your clip board!.
+        /// </summary>
+        internal static string ttBtnCopy {
+            get {
+                return ResourceManager.GetString("ttBtnCopy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Click to generate your script!.
+        /// </summary>
+        internal static string ttBtnGenerate {
+            get {
+                return ResourceManager.GetString("ttBtnGenerate", resourceCulture);
             }
         }
         

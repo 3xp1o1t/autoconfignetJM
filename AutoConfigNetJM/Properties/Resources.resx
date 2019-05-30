@@ -165,9 +165,6 @@
   <data name="rbOptionAddRN" xml:space="preserve">
     <value>Random name's for Vlan's</value>
   </data>
-  <data name="rbOptionAddSNIV" xml:space="preserve">
-    <value>Samename with auto incremente value</value>
-  </data>
   <data name="rbOptionAddSNWVV" xml:space="preserve">
     <value>Vlan name with vlan number</value>
   </data>
@@ -176,5 +173,41 @@
   </data>
   <data name="ttVlanList" xml:space="preserve">
     <value>Double click to remove a selected item!</value>
+  </data>
+  <data name="gbScriptOptions" xml:space="preserve">
+    <value>Script Options</value>
+  </data>
+  <data name="btnCopy" xml:space="preserve">
+    <value>Copy to ClipBoard</value>
+  </data>
+  <data name="btnGenerate" xml:space="preserve">
+    <value>Generate</value>
+  </data>
+  <data name="chbHTTP" xml:space="preserve">
+    <value>Add HTTP</value>
+  </data>
+  <data name="chbSSH" xml:space="preserve">
+    <value>Add SSH</value>
+  </data>
+  <data name="chbTelnet" xml:space="preserve">
+    <value>Add Telnet</value>
+  </data>
+  <data name="gbOutput" xml:space="preserve">
+    <value>Output</value>
+  </data>
+  <data name="ttAddHTTP" xml:space="preserve">
+    <value>Add HTTP configuration to admin your Switch from web browser!</value>
+  </data>
+  <data name="ttAddSHH" xml:space="preserve">
+    <value>Add SSH configuration!</value>
+  </data>
+  <data name="ttAddTelnet" xml:space="preserve">
+    <value>Add Telnet configuration!</value>
+  </data>
+  <data name="ttBtnCopy" xml:space="preserve">
+    <value>Copy to your clip board!</value>
+  </data>
+  <data name="ttBtnGenerate" xml:space="preserve">
+    <value>Click to generate your script!</value>
   </data>
 </root>
