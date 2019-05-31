@@ -133,6 +133,24 @@ namespace AutoConfigNetJM.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Delete Vlan.
+        /// </summary>
+        internal static string ctxMnuItemDelete {
+            get {
+                return ResourceManager.GetString("ctxMnuItemDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Update Vlan.
+        /// </summary>
+        internal static string ctxMnuItemUpdate {
+            get {
+                return ResourceManager.GetString("ctxMnuItemUpdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Options for Vlan Generation!.
         /// </summary>
         internal static string gbOptions {
@@ -165,6 +183,24 @@ namespace AutoConfigNetJM.Properties {
         internal static string lblVlanGen {
             get {
                 return ResourceManager.GetString("lblVlanGen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Put the new vlan number.
+        /// </summary>
+        internal static string msgUpdateVlanText {
+            get {
+                return ResourceManager.GetString("msgUpdateVlanText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Update Vlan Number.
+        /// </summary>
+        internal static string msgUpdateVlanTitle {
+            get {
+                return ResourceManager.GetString("msgUpdateVlanTitle", resourceCulture);
             }
         }
         

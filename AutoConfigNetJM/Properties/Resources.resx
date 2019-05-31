@@ -210,4 +210,16 @@
   <data name="ttBtnGenerate" xml:space="preserve">
     <value>Click to generate your script!</value>
   </data>
+  <data name="ctxMnuItemDelete" xml:space="preserve">
+    <value>Delete Vlan</value>
+  </data>
+  <data name="ctxMnuItemUpdate" xml:space="preserve">
+    <value>Update Vlan</value>
+  </data>
+  <data name="msgUpdateVlanText" xml:space="preserve">
+    <value>Put the new vlan number</value>
+  </data>
+  <data name="msgUpdateVlanTitle" xml:space="preserve">
+    <value>Update Vlan Number</value>
+  </data>
 </root>

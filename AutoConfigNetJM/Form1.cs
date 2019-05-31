@@ -52,7 +52,8 @@ namespace AutoConfigNetJM
             this.btnAddVlan.Text = Properties.Resources.btnAddVlan;
             this.btnGenerate.Text = Properties.Resources.btnGenerate;
             this.btnCopy.Text = Properties.Resources.btnCopy;
-
+            this.ctxMnuItemDelete.Text = Properties.Resources.ctxMnuItemDelete;
+            this.ctxMnuItemUpdate.Text = Properties.Resources.ctxMnuItemUpdate;
             // Spinners
             this.spnVlanNumber.Minimum = MIN_VLAN_RANGE;
             this.spnVlanNumber.Maximum = MAX_VLAN_RANGE;
@@ -91,14 +92,53 @@ namespace AutoConfigNetJM
                         
         }
 
-        private void VlanList_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            vlanList.Items.Remove(vlanList.SelectedItem);
-        }
-
         private void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void DeleteVlanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(vlanList.SelectedItems.Count > 0)
+            {
+                vlanList.Items.Remove(vlanList.SelectedItem);
+            }
+        }
+
+        private void CtxMnuItemUpdate_Click(object sender, EventArgs e)
+        {
+
+            if (vlanList.SelectedItems.Count > 0)
+            {
+                string vlanNumber = Microsoft.VisualBasic.Interaction.InputBox(
+                    Properties.Resources.msgUpdateVlanText,
+                    Properties.Resources.msgUpdateVlanTitle);
+                int new_number = 0;
+                try
+                {
+                    new_number = int.Parse(vlanNumber);
+                }
+                catch
+                {
+                    MessageBox.Show("Error, invalid number.");
+                    return;
+                }
+
+                if(new_number > 0 && new_number < 4095)
+                {
+                    if(vlanList.Items.Contains("vlan " + new_number))
+                    {
+                        MessageBox.Show("Error, number was defined.");
+                        return;
+                    }
+                    else
+                    {
+                        int index = vlanList.SelectedIndex;
+                        vlanList.Items.RemoveAt(index);                        
+                        vlanList.Items.Insert(index, "vlan " + new_number);                        
+                    }
+                }              
+            }
         }
     }
 }

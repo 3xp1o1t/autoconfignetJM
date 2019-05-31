@@ -54,6 +54,9 @@
             this.rbAddRN = new System.Windows.Forms.RadioButton();
             this.spnVlanNumber = new System.Windows.Forms.NumericUpDown();
             this.vlanList = new System.Windows.Forms.ListBox();
+            this.ctxMnuVlanList = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ctxMnuItemDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.ctxMnuItemUpdate = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddVlan = new System.Windows.Forms.Button();
             this.lblVlanGen = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -65,6 +68,7 @@
             this.gbScriptOptions.SuspendLayout();
             this.gbOptions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spnVlanNumber)).BeginInit();
+            this.ctxMnuVlanList.SuspendLayout();
             this.SuspendLayout();
             // 
             // mnuMain
@@ -307,13 +311,33 @@
             // 
             // vlanList
             // 
+            this.vlanList.ContextMenuStrip = this.ctxMnuVlanList;
             this.vlanList.FormattingEnabled = true;
             this.vlanList.ItemHeight = 20;
             this.vlanList.Location = new System.Drawing.Point(7, 82);
             this.vlanList.Name = "vlanList";
             this.vlanList.Size = new System.Drawing.Size(153, 444);
             this.vlanList.TabIndex = 2;
-            this.vlanList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.VlanList_MouseDoubleClick);
+            // 
+            // ctxMnuVlanList
+            // 
+            this.ctxMnuVlanList.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ctxMnuItemDelete,
+            this.ctxMnuItemUpdate});
+            this.ctxMnuVlanList.Name = "ctxMnuVlanList";
+            this.ctxMnuVlanList.Size = new System.Drawing.Size(68, 48);
+            // 
+            // ctxMnuItemDelete
+            // 
+            this.ctxMnuItemDelete.Name = "ctxMnuItemDelete";
+            this.ctxMnuItemDelete.Size = new System.Drawing.Size(67, 22);
+            this.ctxMnuItemDelete.Click += new System.EventHandler(this.DeleteVlanToolStripMenuItem_Click);
+            // 
+            // ctxMnuItemUpdate
+            // 
+            this.ctxMnuItemUpdate.Name = "ctxMnuItemUpdate";
+            this.ctxMnuItemUpdate.Size = new System.Drawing.Size(67, 22);
+            this.ctxMnuItemUpdate.Click += new System.EventHandler(this.CtxMnuItemUpdate_Click);
             // 
             // btnAddVlan
             // 
@@ -373,6 +397,7 @@
             this.gbOptions.ResumeLayout(false);
             this.gbOptions.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spnVlanNumber)).EndInit();
+            this.ctxMnuVlanList.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -408,6 +433,9 @@
         private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.GroupBox gbOutput;
         private System.Windows.Forms.Button btnCopy;
+        private System.Windows.Forms.ContextMenuStrip ctxMnuVlanList;
+        private System.Windows.Forms.ToolStripMenuItem ctxMnuItemDelete;
+        private System.Windows.Forms.ToolStripMenuItem ctxMnuItemUpdate;
     }
 }
 
